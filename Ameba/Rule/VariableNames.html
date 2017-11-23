@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta id="repository-name" content="github.com/veelenga/ameba">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../../js/doc.js"></script>
+  <title>Ameba::Rule::VariableNames - github.com/veelenga/ameba</title>
+</head>
+<body>
+
+<div id="types-list">
+  <div id="search-box">
+    <input type="search" id="search-input" placeholder="Search...">
+  </div>
+
+  <ul>
+    <li><a href="../../index.html">README</a></li>
+  </ul>
+
+  <ul>
+  
+  <li class="parent open current" data-id="github.com/veelenga/ameba/Ameba" data-name="ameba">
+      <a href="../../Ameba.html">Ameba</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/veelenga/ameba/Ameba/AST" data-name="ameba::ast">
+      <a href="../../Ameba/AST.html">AST</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/AST/Util" data-name="ameba::ast::util">
+      <a href="../../Ameba/AST/Util.html">Util</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/AST/Visitor" data-name="ameba::ast::visitor">
+      <a href="../../Ameba/AST/Visitor.html">Visitor</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Config" data-name="ameba::config">
+      <a href="../../Ameba/Config.html">Config</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/veelenga/ameba/Ameba/Formatter" data-name="ameba::formatter">
+      <a href="../../Ameba/Formatter.html">Formatter</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Formatter/BaseFormatter" data-name="ameba::formatter::baseformatter">
+      <a href="../../Ameba/Formatter/BaseFormatter.html">BaseFormatter</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Formatter/DotFormatter" data-name="ameba::formatter::dotformatter">
+      <a href="../../Ameba/Formatter/DotFormatter.html">DotFormatter</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent open current" data-id="github.com/veelenga/ameba/Ameba/Rule" data-name="ameba::rule">
+      <a href="../../Ameba/Rule.html">Rule</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/Base" data-name="ameba::rule::base">
+      <a href="../../Ameba/Rule/Base.html">Base</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/ComparisonToBoolean" data-name="ameba::rule::comparisontoboolean">
+      <a href="../../Ameba/Rule/ComparisonToBoolean.html">ComparisonToBoolean</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/ConstantNames" data-name="ameba::rule::constantnames">
+      <a href="../../Ameba/Rule/ConstantNames.html">ConstantNames</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/DebuggerStatement" data-name="ameba::rule::debuggerstatement">
+      <a href="../../Ameba/Rule/DebuggerStatement.html">DebuggerStatement</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/DuplicatedWhen" data-name="ameba::rule::duplicatedwhen">
+      <a href="../../Ameba/Rule/DuplicatedWhen.html">DuplicatedWhen</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/EmptyEnsure" data-name="ameba::rule::emptyensure">
+      <a href="../../Ameba/Rule/EmptyEnsure.html">EmptyEnsure</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/EmptyExpression" data-name="ameba::rule::emptyexpression">
+      <a href="../../Ameba/Rule/EmptyExpression.html">EmptyExpression</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/HashDuplicatedKey" data-name="ameba::rule::hashduplicatedkey">
+      <a href="../../Ameba/Rule/HashDuplicatedKey.html">HashDuplicatedKey</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/LargeNumbers" data-name="ameba::rule::largenumbers">
+      <a href="../../Ameba/Rule/LargeNumbers.html">LargeNumbers</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/LineLength" data-name="ameba::rule::linelength">
+      <a href="../../Ameba/Rule/LineLength.html">LineLength</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/LiteralInCondition" data-name="ameba::rule::literalincondition">
+      <a href="../../Ameba/Rule/LiteralInCondition.html">LiteralInCondition</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/LiteralInInterpolation" data-name="ameba::rule::literalininterpolation">
+      <a href="../../Ameba/Rule/LiteralInInterpolation.html">LiteralInInterpolation</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/MethodNames" data-name="ameba::rule::methodnames">
+      <a href="../../Ameba/Rule/MethodNames.html">MethodNames</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/NegatedConditionsInUnless" data-name="ameba::rule::negatedconditionsinunless">
+      <a href="../../Ameba/Rule/NegatedConditionsInUnless.html">NegatedConditionsInUnless</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/PercentArrays" data-name="ameba::rule::percentarrays">
+      <a href="../../Ameba/Rule/PercentArrays.html">PercentArrays</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/PredicateName" data-name="ameba::rule::predicatename">
+      <a href="../../Ameba/Rule/PredicateName.html">PredicateName</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/RedundantBegin" data-name="ameba::rule::redundantbegin">
+      <a href="../../Ameba/Rule/RedundantBegin.html">RedundantBegin</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/TrailingBlankLines" data-name="ameba::rule::trailingblanklines">
+      <a href="../../Ameba/Rule/TrailingBlankLines.html">TrailingBlankLines</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/TrailingWhitespace" data-name="ameba::rule::trailingwhitespace">
+      <a href="../../Ameba/Rule/TrailingWhitespace.html">TrailingWhitespace</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/TypeNames" data-name="ameba::rule::typenames">
+      <a href="../../Ameba/Rule/TypeNames.html">TypeNames</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Rule/UnlessElse" data-name="ameba::rule::unlesselse">
+      <a href="../../Ameba/Rule/UnlessElse.html">UnlessElse</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/veelenga/ameba/Ameba/Rule/VariableNames" data-name="ameba::rule::variablenames">
+      <a href="../../Ameba/Rule/VariableNames.html">VariableNames</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Runner" data-name="ameba::runner">
+      <a href="../../Ameba/Runner.html">Runner</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/veelenga/ameba/Ameba/Source" data-name="ameba::source">
+      <a href="../../Ameba/Source.html">Source</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Source/Error" data-name="ameba::source::error">
+      <a href="../../Ameba/Source/Error.html">Error</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/veelenga/ameba/Ameba/Tokenizer" data-name="ameba::tokenizer">
+      <a href="../../Ameba/Tokenizer.html">Tokenizer</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+</div>
+
+<div id="main-content">
+<h1 class="type-name">
+
+  <span class="kind">struct</span> Ameba::Rule::VariableNames
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../../Ameba/Rule/VariableNames.html">Ameba::Rule::VariableNames</a></li><li class="superclass"><a href="../../Ameba/Rule/Base.html">Ameba::Rule::Base</a></li><li class="superclass">Struct</li><li class="superclass">Value</li><li class="superclass">Object</li></ul>
+
+
+
+
+  <h2>Overview</h2>
+
+  <p>A rule that enforces variable names to be in underscored case.</p>
+
+<p>For example, these variable names are considered valid:</p>
+
+<pre><code><span class="k">class</span> <span class="t">Greeting</span>
+  @@default_greeting <span class="o">=</span> <span class="s">&quot;Hello world&quot;</span>
+
+  <span class="k">def</span> <span class="m">initialize</span>(@custom_greeting <span class="o">=</span> <span class="n">nil</span>)
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">print_greeting</span>
+    greeting <span class="o">=</span> @custom_greeting || @@default_greeting
+    puts greeting
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<p>And these are invalid method names:</p>
+
+<pre><code>myBadNamedVar <span class="o">=</span> <span class="n">1</span>
+wrong_Name <span class="o">=</span> <span class="n">2</span></code></pre>
+
+<p>YAML configuration example:</p>
+
+<pre><code><span class="t">VariableNames</span>:
+  <span class="t">Enabled</span>: <span class="n">true</span></code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>Defined in:</h2>
+  
+    
+      <a href="https://github.com/veelenga/ameba/blob/21abce63bde051e0238b1b6126da304cc73fa25c/src/ameba/rule/variable_names.cr#L34" target="_blank">ameba/rule/variable_names.cr</a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>Constructors</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28__temp_236%3AYAML%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_236 : YAML::PullParser)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28config%3Dnil%29-class-method" class="signature"><strong>.new</strong>(config = <span class="n">nil</span>)</a>
+        
+          <div class="summary"><p>A rule that enforces variable names to be in underscored case.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>Instance Method Summary</h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#description%3AString-instance-method" class="signature"><strong>#description</strong> : String</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#description%3D%28_description%3AString%29-instance-method" class="signature"><strong>#description=</strong>(_description : String)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#enabled%3ABool-instance-method" class="signature"><strong>#enabled</strong> : Bool</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#enabled%3D%28_enabled%3ABool%29-instance-method" class="signature"><strong>#enabled=</strong>(_enabled : Bool)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#test%28source%2Cnode%3ACrystal%3A%3AVar%29-instance-method" class="signature"><strong>#test</strong>(source, node : Crystal::Var)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#test%28source%2Cnode%3ACrystal%3A%3AInstanceVar%29-instance-method" class="signature"><strong>#test</strong>(source, node : Crystal::InstanceVar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#test%28source%2Cnode%3ACrystal%3A%3AClassVar%29-instance-method" class="signature"><strong>#test</strong>(source, node : Crystal::ClassVar)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#test%28source%29-instance-method" class="signature"><strong>#test</strong>(source)</a>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#to_yaml%28__temp_241%3AYAML%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_yaml</strong>(__temp_241 : YAML::Builder)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+  <h3>Instance methods inherited from struct <code><a href="../../Ameba/Rule/Base.html">Ameba::Rule::Base</a></code></h3>
+  
+  
+    <a href="../../Ameba/Rule/Base.html#catch%28source%3ASource%29-instance-method" class="tooltip">
+      <span>catch(source : Source)</span>
+    catch</a>, 
+    
+  
+    <a href="../../Ameba/Rule/Base.html#name-instance-method" class="tooltip">
+      <span>name</span>
+    name</a>, 
+    
+  
+    <a href="../../Ameba/Rule/Base.html#test%28source%3ASource%2Cnode%3ACrystal%3A%3AASTNode%29-instance-method" class="tooltip">
+      <span>test(source : Source, node : Crystal::ASTNode)<br/>test(source : Source)</span>
+    test</a>
+    
+  
+
+
+    
+
+  <h3>Constructor methods inherited from struct <code><a href="../../Ameba/Rule/Base.html">Ameba::Rule::Base</a></code></h3>
+  
+  
+    <a href="../../Ameba/Rule/Base.html#new-class-method" class="tooltip">
+      <span>new</span>
+    new</a>
+    
+  
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>Constructor Detail</h2>
+  
+    <div class="entry-detail" id="new&#40;__temp_236:YAML::PullParser&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(__temp_236 : YAML::PullParser)
+
+        <a class="method-permalink" href="#new%28__temp_236%3AYAML%3A%3APullParser%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new&#40;config&#61;nil&#41;-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(config = <span class="n">nil</span>)
+
+        <a class="method-permalink" href="#new%28config%3Dnil%29-class-method">#</a>
+      </div>
+      
+        <div class="doc"><p>A rule that enforces variable names to be in underscored case.</p>
+
+<p>For example, these variable names are considered valid:</p>
+
+<pre><code><span class="k">class</span> <span class="t">Greeting</span>
+  @@default_greeting <span class="o">=</span> <span class="s">&quot;Hello world&quot;</span>
+
+  <span class="k">def</span> <span class="m">initialize</span>(@custom_greeting <span class="o">=</span> <span class="n">nil</span>)
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="m">print_greeting</span>
+    greeting <span class="o">=</span> @custom_greeting || @@default_greeting
+    puts greeting
+  <span class="k">end</span>
+<span class="k">end</span></code></pre>
+
+<p>And these are invalid method names:</p>
+
+<pre><code>myBadNamedVar <span class="o">=</span> <span class="n">1</span>
+wrong_Name <span class="o">=</span> <span class="n">2</span></code></pre>
+
+<p>YAML configuration example:</p>
+
+<pre><code><span class="t">VariableNames</span>:
+  <span class="t">Enabled</span>: <span class="n">true</span></code></pre></div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/veelenga/ameba/blob/21abce63bde051e0238b1b6126da304cc73fa25c/src/ameba/rule/variable_names.cr#L34" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>Instance Method Detail</h2>
+  
+    <div class="entry-detail" id="description:String-instance-method">
+      <div class="signature">
+        
+        def <strong>description</strong> : String
+
+        <a class="method-permalink" href="#description%3AString-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="description&#61;&#40;_description:String&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>description=</strong>(_description : String)
+
+        <a class="method-permalink" href="#description%3D%28_description%3AString%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="enabled:Bool-instance-method">
+      <div class="signature">
+        
+        def <strong>enabled</strong> : Bool
+
+        <a class="method-permalink" href="#enabled%3ABool-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="enabled&#61;&#40;_enabled:Bool&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>enabled=</strong>(_enabled : Bool)
+
+        <a class="method-permalink" href="#enabled%3D%28_enabled%3ABool%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="test&#40;source,node:Crystal::Var&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>test</strong>(source, node : Crystal::Var)
+
+        <a class="method-permalink" href="#test%28source%2Cnode%3ACrystal%3A%3AVar%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/veelenga/ameba/blob/21abce63bde051e0238b1b6126da304cc73fa25c/src/ameba/rule/variable_names.cr#L50" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="test&#40;source,node:Crystal::InstanceVar&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>test</strong>(source, node : Crystal::InstanceVar)
+
+        <a class="method-permalink" href="#test%28source%2Cnode%3ACrystal%3A%3AInstanceVar%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/veelenga/ameba/blob/21abce63bde051e0238b1b6126da304cc73fa25c/src/ameba/rule/variable_names.cr#L54" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="test&#40;source,node:Crystal::ClassVar&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>test</strong>(source, node : Crystal::ClassVar)
+
+        <a class="method-permalink" href="#test%28source%2Cnode%3ACrystal%3A%3AClassVar%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/veelenga/ameba/blob/21abce63bde051e0238b1b6126da304cc73fa25c/src/ameba/rule/variable_names.cr#L58" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="test&#40;source&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>test</strong>(source)
+
+        <a class="method-permalink" href="#test%28source%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/veelenga/ameba/blob/21abce63bde051e0238b1b6126da304cc73fa25c/src/ameba/rule/variable_names.cr#L39" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="to_yaml&#40;__temp_241:YAML::Builder&#41;-instance-method">
+      <div class="signature">
+        
+        def <strong>to_yaml</strong>(__temp_241 : YAML::Builder)
+
+        <a class="method-permalink" href="#to_yaml%28__temp_241%3AYAML%3A%3ABuilder%29-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+      </div>
+    </div>
+  
+
+
+
+
+</div>
+
+</body>
+</html>
